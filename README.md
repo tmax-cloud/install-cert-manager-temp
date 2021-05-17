@@ -11,9 +11,13 @@
     ```
 
 * 폐쇄망 설치 스크립트 실행순서
+    * 외부 네트워크 환경에서 받은 파일들을 manifest경로 아래 위치시켜야 함
+        * img/
+        * cert-manager-v1.1.0.yaml
     * Cert Manager 설치
     ```bash
     $ cd manifest
+    $ chmod +x *.sh
     $ source version.conf
     $ export REGISTRY={registryIP:PORT}
     $ bash 1.2.install-cert-cn.sh
