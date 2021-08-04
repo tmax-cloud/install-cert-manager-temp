@@ -1,2 +1,0 @@
-curl -L https://github.com/jetstack/cert-manager/releases/download/${CERT_MANAGER_VERSION}/cert-manager.yaml > cert-manager-${CERT_MANAGER_VERSION}.yaml
-kubectl apply -f cert-manager-${CERT_MANAGER_VERSION}.yaml
